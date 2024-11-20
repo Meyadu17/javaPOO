@@ -1,22 +1,15 @@
 package fr.apside.exercice.javaPoo;
 
-import fr.apside.exercice.javaPoo.entity.Bus;
-import fr.apside.exercice.javaPoo.entity.Car;
-import fr.apside.exercice.javaPoo.entity.Vehicule;
+import fr.apside.exercice.javaPoo.entity.Point;
 
 public class Main {
 	public static void main(String[] args) {
 
+		var point1 = new Point(4, 2);
 
-		Vehicule[] vehicules = {new Car(), new Bus(), new Car() };
+		var point2 = new Point(4, 2);
 
-		for (Vehicule vehicule : vehicules) {
-			//Polymophisme
-			vehicule.start();
-			vehicule.accelerate();
-
-		}
-
+		System.out.println(point1.equals(point2));
 	}
 
 }

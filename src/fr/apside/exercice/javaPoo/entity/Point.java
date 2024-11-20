@@ -2,12 +2,12 @@ package fr.apside.exercice.javaPoo.entity;
 
 import java.util.Objects;
 
-public class point {
+public class Point {
 
 	private int x;
 	private int y;
 
-	public point(int x, int y) {
+	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -18,7 +18,7 @@ public class point {
 			return true;
 		if (o == null || getClass() != o.getClass())
 			return false;
-		point point = (point) o;
+		Point point = (Point) o;
 		return x == point.x && y == point.y;
 	}
 

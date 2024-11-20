@@ -17,7 +17,8 @@ public class Vehicule {
 		started = true;
 	}
 
-	public void stop() {
+	// ajouter final sur la méthode signifie que les classes qui héritent de Vehicule ne peuvent pas redéfinir cette méthode.
+	public final void stop() {
 		started = false;
 	}
 

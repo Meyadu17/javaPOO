@@ -1,6 +1,9 @@
 package fr.apside.exercice.javaPoo.exercices;
 
+import fr.apside.exercice.javaPoo.entity.Bus;
+import fr.apside.exercice.javaPoo.entity.Car;
 import fr.apside.exercice.javaPoo.entity.Employee;
+import fr.apside.exercice.javaPoo.entity.Vehicule;
 
 public class Exercice5 {
 	public static void main(String[] args) {
@@ -17,6 +20,15 @@ public class Exercice5 {
 		employee1.raiseSalary(10);
 		System.out.println(employee1.getName() + " : " + employee1.getSalary());
 		System.out.println(employee2.getName() + " : " + employee2.getSalary());
+
+		Vehicule[] vehicules = {new Car(), new Bus(), new Car() };
+
+		for (Vehicule vehicule : vehicules) {
+			//Polymophisme
+			vehicule.start();
+			vehicule.accelerate();
+
+		}
 
 	}
 }
